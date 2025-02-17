@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtime Betting Game</title>
+    
+    <!-- Include CSS styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login/Register Form -->
+    <div id="loginContainer" class="container">
+        <h2>Login to Playtime</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="javascript:void(0);" onclick="showRegisterForm()">Register</a></p>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerContainer" class="container" style="display: none;">
+        <h2>Create an Account</h2>
+        <form id="registerForm">
+            <input type="email" id="newEmail" placeholder="Enter Email" required>
+            <input type="password" id="newPassword" placeholder="Enter Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="javascript:void(0);" onclick="showLoginForm()">Login</a></p>
+    </div>
+
+    <!-- Game Section -->
+    <div id="gameSection" class="container" style="display: none;">
+        <h2>Welcome, <span id="userEmail"></span></h2>
+        <button id="startGameBtn">Start Game</button>
+        <button id="depositBtn">Deposit</button>
+        <button id="withdrawBtn">Withdraw</button>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
